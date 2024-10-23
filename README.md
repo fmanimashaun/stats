@@ -4,6 +4,8 @@
 
 This project serves as a demonstration of various TypeScript concepts, including **enums**, **generics**, **inheritance versus composition**, and best practices for their usage. It highlights how these concepts can be effectively applied to create flexible and reusable code.
 
+![project overview](images/project-overview.png)
+
 ## Key Concepts Explored
 
 ### 1. Enums
@@ -50,6 +52,8 @@ The project explores two design patterns: inheritance and composition.
 
 Initially, we utilized inheritance to create a class hierarchy for reading and mapping data. This approach demonstrated a clear structure but introduced limitations in terms of flexibility and reusability.
 
+![Inheritance approach](images/inheritance-approach.png)
+
 ```typescript
 // MatchReader extending CsvFileReader
 export class MatchReader extends CsvFileReader<matchData> {
@@ -62,6 +66,8 @@ export class MatchReader extends CsvFileReader<matchData> {
 #### Composition Approach
 
 We then transitioned to a composition-based design, where functionality is built using smaller, reusable classes. This approach enhances flexibility, allowing easy integration of new features or data sources without modifying existing code.
+
+![composition approach](images/composition-approach-1.png)
 
 ```typescript
 // CsvFileReader class for reading data
@@ -85,6 +91,8 @@ export class MatchReader {
 ### 4. Practical Applications
 
 The project includes practical implementations of analysis and reporting through dedicated classes, which can be easily extended or modified based on specific requirements.
+
+![expanded composition approach](images/composition-approach-2.png)
 
 #### Win Analysis Example
 
